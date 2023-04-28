@@ -189,5 +189,16 @@ width: 100%;
 }
 .color-picker{
   border-radius: 50%;
- width: 10%;
+  width: 35px;
+  height: 35px;
+}
+.material-color-picker{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 250px;
+
+}
+.color-picker-text{
+  margin-left: 10px;
 }

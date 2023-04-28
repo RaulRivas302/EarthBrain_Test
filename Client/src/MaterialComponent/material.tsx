@@ -209,14 +209,26 @@ const Material: FC<Props> = ({ materials, setMaterials }) => {
                   <div className="form-field">
                     <label>Color</label>
                     <br />
+                    <div className="material-color-picker">
                     <input
                       type="color"
                       id="color"
                       className="color-picker"
                       name="color"
+                      style={{backgroundColor:formData.color?formData.color:'#555763'
+                      }}
                       value={formData.color}
                       onChange={handleInputChange}
                     />
+                      <input
+                      type="text"
+                      id="color"
+                      name="color"
+                      className="color-picker-text"
+                      value={formData.color}
+                      onChange={handleInputChange}
+                    />
+                    </div>
                   </div>
                   <div className="form-field">
                     <label>Cost (USD per m<sup>3</sup>)</label>
@@ -280,13 +292,27 @@ const Material: FC<Props> = ({ materials, setMaterials }) => {
                   <div className="form-field">
                     <label>Color</label>
                     <br />
+                    <div className="material-color-picker">
                     <input
                       type="color"
                       id="color"
+                      className="color-picker"
                       name="color"
+                      style={{backgroundColor:formData.color?formData.color:'#555763'
+                      }}
                       value={formData.color}
                       onChange={handleInputChange}
                     />
+                      <input
+                      type="text"
+                      id="color"
+                      name="color"
+                      className="color-picker-text"
+                      value={formData.color}
+                      onChange={handleInputChange}
+                    />
+                    </div>
+
                   </div>
                   <div className="form-field">
                     <label>Cost (USD per m<sup>3</sup>)</label>
